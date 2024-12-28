@@ -1,0 +1,17 @@
+{
+  "name": "drx",
+  "author": "Gustavo Barragan <dev@droni.co>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://droni.co",
+  "keywords": ["mvc", "api", "express", "nodejs", "REST", "ORM"],
+  "license": "MIT",
+  "description": "Basic prebuild framework to create APIs",
+  "engines": {
+    "node": ">= 22.0.0",
+    "npm": ">= 10.0.0"
+  }
+}
