@@ -3,7 +3,7 @@
   "author": "Gustavo Barragan <dev@droni.co>",
   "version": "0.0.0-development",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "src/index.d.ts",
   "scripts": {
     "semantic-release": "semantic-release",
     "build": "tsc",
@@ -11,6 +11,7 @@
   },
   "files": [
     "dist",
+    "src",
     "README.md"
   ],
   "publishConfig": {
@@ -33,7 +34,6 @@
     "npm": ">= 10.9.0"
   },
   "dependencies": {
-    "@types/node": "^22.10.2",
     "typescript": "^5.7.2"
   },
   "devDependencies": {
