@@ -26,6 +26,9 @@ const copyFiles = (projectName:string) => {
 
   // copy template files from start folder to new folder
   const templateFolder = import.meta.dirname+'/../start';
+  console.log('Copying files...')
+  console.log('From: ', templateFolder)
+  console.log('To: ', folderName)
   fs.cp(templateFolder, folderName, {recursive: true}, (err) => {
     console.log('Error: ', err)
   });
