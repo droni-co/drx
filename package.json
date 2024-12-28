@@ -11,8 +11,9 @@
   },
   "files": [
     "dist",
+    "types",
     "README.md",
-    "types/index.d.ts"
+    "index.d.ts"
   ],
   "publishConfig": {
     "access": "public"
