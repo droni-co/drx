@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import fs from 'node:fs'
+import path from 'node:path'
 console.log('hola mundo')
-console.log(process.argv)
-console.log(import.meta.dirname);
+console.log('Procces Arguments: ', process.argv)
 
-const folderName = import.meta.dirname+'/test';
+const folderName = path.resolve('.');
 
 try {
   if (!fs.existsSync(folderName)) {
