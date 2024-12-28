@@ -1,3 +1,3 @@
-export const hola = (str:string):string => {
-  return `Hola ${str}`;
+export const hello = (str:string):string => {
+  return `Hello ${str}`;
 };
