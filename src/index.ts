@@ -1,9 +1,3 @@
-class Main {
-  constructor() {
-    console.log('Hello World');
-  }
-
-  public static hello() {
-    return 'Hello World';
-  }
-}
+export const hola = (str:string):string => {
+  return `Hola ${str}`;
+};
