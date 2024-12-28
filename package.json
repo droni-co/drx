@@ -2,7 +2,7 @@
   "name": "dronico-drox",
   "author": "Gustavo Barragan <dev@droni.co>",
   "version": "0.0.0-development",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "semantic-release": "semantic-release",
     "build": "tsc",
