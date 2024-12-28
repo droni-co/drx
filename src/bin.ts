@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import fs from 'node:fs'
 import path from 'node:path'
-console.log('hola mundo')
 console.log('Procces Arguments: ', process.argv)
 
 // ask for name of project
@@ -27,8 +26,8 @@ const copyFiles = (projectName:string) => {
 
   // copy template files from start folder to new folder
   const templateFolder = import.meta.dirname+'/../start';
-  const files = fs.readdirSync(templateFolder);
-  files.forEach(file => {
-    fs.copyFileSync(`${templateFolder}/${file}`, `${folderName}/${file}`);
+  fs.cp(templateFolder, folderName, {recursive: true}, (err) => {
+    console.log('Error: ', err)
   });
+  console.log('Files copied')
 }
